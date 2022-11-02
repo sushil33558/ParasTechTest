@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SecondCell" id="gTV-IL-0wX" customClass="SecondCell" customModule="PtTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.folder.fill.ar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2Mi-77-sPF">
+                        <rect key="frame" x="4" y="5" width="111" height="85.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxc-4v-zqY" customClass="SetView" customModule="PtTest" customModuleProvider="target">
+                        <rect key="frame" x="62.5" y="11" width="45.5" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Op-bl-QT6">
+                                <rect key="frame" x="5" y="5" width="35.5" height="12"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Op-bl-QT6" secondAttribute="trailing" constant="5" id="3DG-yd-loh"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="7ya-NR-0x8"/>
+                            <constraint firstItem="5Op-bl-QT6" firstAttribute="top" secondItem="wxc-4v-zqY" secondAttribute="top" constant="5" id="Bqy-yM-EX8"/>
+                            <constraint firstItem="5Op-bl-QT6" firstAttribute="leading" secondItem="wxc-4v-zqY" secondAttribute="leading" constant="5" id="VoL-pN-jNf"/>
+                            <constraint firstAttribute="bottom" secondItem="5Op-bl-QT6" secondAttribute="bottom" constant="5" id="cZg-rS-5KC"/>
+                            <constraint firstAttribute="height" constant="22" id="op6-fE-EWC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TU3-Mn-wmE">
+                        <rect key="frame" x="11" y="63" width="43" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ut5-Ll-WbB">
+                                <rect key="frame" x="5" y="5" width="33" height="12"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ut5-Ll-WbB" secondAttribute="bottom" constant="5" id="5r9-3u-P6X"/>
+                            <constraint firstItem="ut5-Ll-WbB" firstAttribute="top" secondItem="TU3-Mn-wmE" secondAttribute="top" constant="5" id="Q6n-Kk-gsv"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="43" id="YNr-15-s1N"/>
+                            <constraint firstItem="ut5-Ll-WbB" firstAttribute="leading" secondItem="TU3-Mn-wmE" secondAttribute="leading" constant="5" id="YuC-RV-LJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="ut5-Ll-WbB" secondAttribute="trailing" constant="5" id="jVl-tb-dRL"/>
+                            <constraint firstAttribute="height" constant="22" id="utv-DI-0bw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wxc-4v-zqY" firstAttribute="top" secondItem="2Mi-77-sPF" secondAttribute="top" constant="7" id="3uc-BF-3vh"/>
+                <constraint firstItem="2Mi-77-sPF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="Cvk-VO-KcG"/>
+                <constraint firstAttribute="bottom" secondItem="2Mi-77-sPF" secondAttribute="bottom" constant="4" id="E0A-Z5-Ui0"/>
+                <constraint firstItem="2Mi-77-sPF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="cXq-Ge-xki"/>
+                <constraint firstItem="TU3-Mn-wmE" firstAttribute="bottom" secondItem="2Mi-77-sPF" secondAttribute="bottom" constant="-7" id="ch1-QB-XCM"/>
+                <constraint firstItem="wxc-4v-zqY" firstAttribute="trailing" secondItem="2Mi-77-sPF" secondAttribute="trailing" constant="-7" id="jdx-De-YKO"/>
+                <constraint firstItem="TU3-Mn-wmE" firstAttribute="leading" secondItem="2Mi-77-sPF" secondAttribute="leading" constant="7" id="nqb-bi-DDv"/>
+                <constraint firstAttribute="trailing" secondItem="2Mi-77-sPF" secondAttribute="trailing" constant="4" id="qll-oT-6iE"/>
+            </constraints>
+            <size key="customSize" width="119" height="96"/>
+            <connections>
+                <outlet property="categoryNameLbl" destination="5Op-bl-QT6" id="1gR-nm-pOb"/>
+                <outlet property="categoryNameView" destination="wxc-4v-zqY" id="t1o-0O-ZU1"/>
+                <outlet property="secondImageView" destination="2Mi-77-sPF" id="9vk-fO-pOf"/>
+                <outlet property="userNameLbl" destination="ut5-Ll-WbB" id="j4I-HD-bnn"/>
+                <outlet property="userNameView" destination="TU3-Mn-wmE" id="jUo-32-35L"/>
+            </connections>
+            <point key="canvasLocation" x="84.782608695652186" y="144.64285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="questionmark.folder.fill.ar" catalog="system" width="128" height="97"/>
+    </resources>
+</document>

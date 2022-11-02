@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCell" id="gTV-IL-0wX" customClass="ThirdCell" customModule="PtTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="169" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="169" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZL-yo-CHT">
+                        <rect key="frame" x="8" y="8" width="153" height="126"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="externaldrive.fill.badge.wifi" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gLi-Au-KUC">
+                                <rect key="frame" x="-1" y="2" width="154" height="73.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7d-8X-jSc">
+                                <rect key="frame" x="8" y="83" width="137" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4c-6f-ORS">
+                                <rect key="frame" x="8" y="105" width="28.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="x4c-6f-ORS" secondAttribute="bottom" constant="7.5" id="9CC-jL-W0n"/>
+                            <constraint firstItem="x4c-6f-ORS" firstAttribute="leading" secondItem="U7d-8X-jSc" secondAttribute="leading" id="BMa-4U-iq3"/>
+                            <constraint firstItem="gLi-Au-KUC" firstAttribute="top" secondItem="KZL-yo-CHT" secondAttribute="top" id="CYs-UJ-hAv"/>
+                            <constraint firstItem="U7d-8X-jSc" firstAttribute="leading" secondItem="KZL-yo-CHT" secondAttribute="leading" constant="8" id="K9w-7H-PxG"/>
+                            <constraint firstItem="gLi-Au-KUC" firstAttribute="leading" secondItem="KZL-yo-CHT" secondAttribute="leading" id="QPm-NB-6Bs"/>
+                            <constraint firstItem="x4c-6f-ORS" firstAttribute="top" secondItem="U7d-8X-jSc" secondAttribute="bottom" constant="4" id="TTY-tZ-cwA"/>
+                            <constraint firstItem="gLi-Au-KUC" firstAttribute="height" secondItem="KZL-yo-CHT" secondAttribute="height" multiplier="0.611111" id="XZG-gR-Ijh"/>
+                            <constraint firstItem="U7d-8X-jSc" firstAttribute="top" secondItem="gLi-Au-KUC" secondAttribute="bottom" constant="6" id="cbP-2s-VdW"/>
+                            <constraint firstAttribute="trailing" secondItem="U7d-8X-jSc" secondAttribute="trailing" constant="8" id="mcK-Pw-e41"/>
+                            <constraint firstAttribute="trailing" secondItem="gLi-Au-KUC" secondAttribute="trailing" id="z1D-bd-fWD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KZL-yo-CHT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Clw-5E-DeN"/>
+                <constraint firstAttribute="trailing" secondItem="KZL-yo-CHT" secondAttribute="trailing" constant="8" id="MLh-X4-vuI"/>
+                <constraint firstItem="KZL-yo-CHT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="UQm-Mv-rcH"/>
+                <constraint firstAttribute="bottom" secondItem="KZL-yo-CHT" secondAttribute="bottom" constant="8" id="tuX-JG-Cds"/>
+            </constraints>
+            <size key="customSize" width="169" height="142"/>
+            <connections>
+                <outlet property="amtUserLbl" destination="x4c-6f-ORS" id="IFr-JX-BxW"/>
+                <outlet property="expNameLbl" destination="U7d-8X-jSc" id="Oaz-Iy-eP0"/>
+                <outlet property="thirdImageView" destination="gLi-Au-KUC" id="JU4-E8-a9H"/>
+                <outlet property="thirdInnerView" destination="KZL-yo-CHT" id="gFx-bA-cSJ"/>
+            </connections>
+            <point key="canvasLocation" x="226.81159420289856" y="160.04464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="externaldrive.fill.badge.wifi" catalog="system" width="128" height="86"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
